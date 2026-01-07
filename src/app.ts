@@ -15,6 +15,8 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(cors({ origin: FRONT, credentials: true }));
 
+console.log("sss")
+
 app.use('/api', routes);
 
 app.get('/', (_req, res) => res.send('Juice Shop API'));
